@@ -1,0 +1,21 @@
+n=int(input())
+l=list(map(int,input().split()))
+count=0
+for i in l:
+       if i%10==3 or i%10==6:
+           count+=i
+if count:
+    print(count)
+else:
+ print('-1')
+n=int(input())
+l=list(map(int,input().split()))
+count=0
+list=l[::-1]
+count=0
+for i in list:
+       if i%2==0:
+           print(i,end=' ')
+           count+=1
+if(count==0):
+      print('-1')
