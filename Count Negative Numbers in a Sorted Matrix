@@ -1,0 +1,8 @@
+list1 = list(map(list,input().split('#')))
+count=0
+for i in list1:
+    for j in i:
+        if j=='-':
+            count+=1
+print(count)
+
