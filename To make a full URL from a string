@@ -1,0 +1,5 @@
+string1,string2=input().split('m#')
+string1=string1.replace('#','.')
+string2=string2.replace('#','/')
+print('https://',string1,'m/',string2,'/',sep='')
+
