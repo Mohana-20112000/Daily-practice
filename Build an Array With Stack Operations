@@ -1,0 +1,18 @@
+user,eliminating_part=input().split("#")
+list1,list2=[],[]
+for ele in range(len(user)):
+    list1.append(ele+1)
+    if user[ele] in '1234567890':
+        list2.append(int(user[ele]))
+list3=[]
+strg=''
+for element in list1:
+    if list2!=list3:
+        if element in list2:
+            strg+="\"Push\","
+            list3.append(element)
+        else:
+            strg+=("\"Push\",")
+            strg+=("\"Pop\",")
+string1=strg.rstrip(',')
+print("["+string1+"]")
