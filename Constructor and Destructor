@@ -1,0 +1,24 @@
+class studentDetails:
+    def __init__(self,Name,rollno,address,Zipcode):
+        self.Name=Name
+        self.rollno=rollno
+        self.address=address
+        self.Zip=Zipcode
+    def display(self):
+        print('Student Name::',self.Name)
+        print('Roll no is::',self.rollno)
+        print('Address is::',self.address)
+        print('Zipcode is ::',self.Zip)
+    def __del__(self):
+        print('Student Details removed')
+if __name__=='__main__':
+        print('This is the Student Details constructor called...')
+        Name=input('Enter the student Name ::')
+        rollno=int(input('Enter the student roll no::'))
+        address=input('Enter the student address::')
+        Zipcode=input('Enter the Zipcode ::')
+        k=studentDetails(Name,rollno,address,Zipcode)
+        print('The Entered Student Details are shown below::-------')
+        k.display()
+        print('Student Detail is closed.......')
+        del k
