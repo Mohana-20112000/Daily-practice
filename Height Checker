@@ -1,0 +1,10 @@
+user=input()
+l=[]
+for i in user:
+    l.append(i)
+list1=sorted(l)
+count=0
+for j in range(0,len(list1)):
+    if list1[j]!=l[j]:
+        count+=1
+print(count)
