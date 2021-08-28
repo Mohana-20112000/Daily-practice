@@ -1,0 +1,5 @@
+a=input()
+if a in 'aeiou' or a in 'AEIOU':
+    print(a,'is a vowel')
+else:
+    print(a,'is a consonant')\
