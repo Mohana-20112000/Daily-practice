@@ -1,0 +1,2 @@
+extracted_input,user_input=input().split('w.')
+print(user_input)
