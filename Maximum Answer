@@ -1,0 +1,13 @@
+a,b=input().split()
+list1=list(map(int,input().split()))
+count=0
+s=0
+for i in range(int(a)):
+    if s==2:
+        break
+    count+=1
+    if list1[i]>int(b):
+        count-=1
+        s+=1
+print(count)
+
