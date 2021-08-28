@@ -1,0 +1,18 @@
+string=input()
+l=len(string)
+count=0
+str=string[1:]
+if string.isupper() or string.islower():
+    print('true')
+elif string[0].islower() and str.isupper():
+    print('false')
+else:
+    if string[0].isupper():
+        for i in str:
+            if(i.isupper()):
+              count+=1
+              
+    if(count):
+            print('false')
+    else:
+        print('true')
