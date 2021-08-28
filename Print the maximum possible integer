@@ -1,0 +1,7 @@
+num=int(input())
+r=num%10
+if num%10==9:
+    print(num)
+else:
+    result=num-r-1
+    print(result)
