@@ -1,0 +1,17 @@
+from collections import Counter
+n=int(input())
+l=[]
+l2=[]
+for i in range (n):
+    s=str(input())
+    m=s.split()
+    for j in m:
+        if j[0]=='#':
+            l.append(j)
+p=dict(Counter(l))
+for k,v in sorted(p.items(),key=lambda x:(-x[1],x[0])):
+    l2.append("{}".format(k))
+for i in range(5):
+    print(l2[i])
+
+ 
