@@ -1,0 +1,30 @@
+N=int(input())
+li=list(map(int,input().split()))
+list1=[]
+for each in li:
+    counting=li.count(each)
+    if counting==1:
+        list1.append(each)
+        l=sorted(list1)
+for i in l:
+    print(i,end=' '
+N=int(input())
+li=list(map(int,input().split()))
+list1=[]
+for each in li:
+    counting=li.count(each)
+    if counting==1:
+        list1.append(each)
+        l=sorted(list1)
+for i in l:
+    print(i,end=' '
+N=int(input())
+li=list(map(int,input().split()))
+list1=[]
+for each in li:
+    counting=li.count(each)
+    if counting==1:
+        list1.append(each)
+        l=sorted(list1)
+for i in l:
+    print(i,end=' '
