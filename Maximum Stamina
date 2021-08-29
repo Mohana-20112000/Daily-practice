@@ -1,0 +1,18 @@
+n=int(input())
+a=[]
+k=0
+l=list(map(int,input().split()))
+for i in l:
+    if i>k:
+        a.append(i)
+        k=i
+if len(a)==1:
+    print(a[0])
+else:
+    l=[]
+    for i in range (len(a)+1):
+        d=0
+        for j in range (i,len(a)):
+            d=a[j]^d
+            l.append(d)
+    print(max(l))
