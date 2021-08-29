@@ -1,0 +1,47 @@
+def mixstr(A,n):
+    if len(A) == 1:
+        return A
+    else:
+        B = []
+        max = 0
+        v = u = 0
+        for i in range(n):
+            m = A[i]
+            for j in range(n):
+                if j != i:
+                    m1 = A[j]
+                    for k in range(len(m)):
+                        mi = k
+                        mli = 0
+                        while mi < len(m) and m1[mli] == m[mi]:
+                            mli = mli + 1
+                            mi = k + mli
+                            if mli >= len(m1):
+                                break
+                        if mi == len(m):
+                            break
+                    if mli > max:
+                        max = mli
+                        u = j
+                        v = i
+          
+        if v == u == 0:
+            A[v] = A[v] + A[1]
+            for i in range(n):
+                if i != 1:
+                    B = B + [A[i]]
+        else:
+            A[v] = A[v] + A[u][max:]
+            for i in range(n):
+                if i != u:
+                    B = B + [A[i]]
+        return mixstr(B,len(B))
+
+
+inp = int(input())
+lis = []
+for z in range(inp):
+    inp2 = str(input())
+    lis = lis + [inp2]
+s = mixstr(lis,len(lis))
+print(len(s[0]))
